@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>POP NOTES</title>
+</head>
+
+<body>
+  <section class="main">
+    <input type="checkbox" id="toggle-side-nav" hidden>
+    <label for="toggle-side-nav" class="overlay-for-side-nav-active"></label>
+    <div class="container container-01">
+      <nav class="side-nav">
+        <header class="side-nav__header">
+          <h3>Notas</h3>
+          <label for="toggle-side-nav">
+            <svg viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"/>
+            </svg>
+          </label>
+        </header>
+        <main class="side-nav__main">
+          <span class="topics">Marcadores</span>
+          <div class="side-nav__main__item">
+            <ul></ul>
+          </div>
+          <div class="side-nav__main__item add-new-marker">
+            <svg viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/>
+            </svg>
+            <p>Adicionar Marcador</p>
+          </div>
+          <div class="side-nav__main__item about">
+            <svg viewBox="0 0 512 512" style="transform: rotate(180deg);" >
+              <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+              <path d="M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z"/>
+            </svg>
+            <p>Sobre</p>
+          </div>
+          <div class="side-nav__main__item help">
+            <svg viewBox="0 0 512 512">
+              <path d="M160 164s1.44-33 33.54-59.46C212.6 88.83 235.49 84.28 256 84c18.73-.23 35.47 2.94 45.48 7.82C318.59 100.2 352 120.6 352 164c0 45.67-29.18 66.37-62.35 89.18S248 298.36 248 324" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40"/>
+              <circle cx="248" cy="399.99" r="32"/>
+            </svg>
+            <p>Ajuda</p>
+          </div>
+        </main>
+      </nav>
+    </div>
+    <div class="container container-02">
+      <header class="container__header">
+        <label for="toggle-side-nav" class="toggle-side-nav">
+          <svg viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"/>
+          </svg>
+          <svg viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"/>
+          </svg>
+        </label>
+        <input type="search" placeholder="Pesquisar nota" id="search">
+        <label for="search">
+          <svg viewBox="0 0 512 512">
+            <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/>
+          </svg>
+        </label>
+      </header>
+      <main class="container__main"></main>
+    </div>
+  </section>
+  <!-- SCRIPTS -->
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
